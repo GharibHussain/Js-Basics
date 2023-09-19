@@ -7,7 +7,7 @@ process.stdin.on('data', function(inputFromUser){
     let counter = 1;
 
     while(counter <= 10){
-        let outValue = util.format("*".padEnd(10) + "%d * %d = %d" + "*".padStart(10) + "\n", counter, num, counter*num);
+        let outValue = util.format("*".padEnd(10)+ "%d * %d = %d".padEnd(20) + "*" + "\n", counter, num, counter*num);
 
         process.stdout.write(outValue);
         counter++;
