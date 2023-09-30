@@ -13,6 +13,7 @@ process.stdin.on('data', function(inputFromUser){
 
     // print the calender
     for (i = 1; i <= numberOfDays; i++ ){
+        
         let dayCounter = (firstDayOfMonth % 7);
 
         process.stdout.write(daysOfTheWeek[dayCounter] + " " + i + ". " + month + " ");
